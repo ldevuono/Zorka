@@ -1,1 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,400&family=Montserrat:wght@400;700&display=swap');
+@use "./variables";
+
+html {
+    font-size: 125%;
+    font-family: variables.$sansSerif;
+    color: variables.$darkGrey;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navLogin {
+    font-size: .5rem;
+    color: variables.$grey;
+}
+
+.navHead {
+    font-size: .5rem;
+}
+
+.navLinks {
+    font-size: .7rem;
+}
+
+header {
+    h2 {
+        font-family: variables.$serif;
+        text-transform: none;
+        font-size: 3rem;
+        font-weight: 400;
+
+    }
+
+    h1 {
+        font-size: .7rem;
+        font-weight: 400;
+        letter-spacing: 4px;
+    }
+}
