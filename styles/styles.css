@@ -290,6 +290,43 @@ a {
   color: inherit;
 }
 
+button {
+  border: none;
+}
+
+html {
+  font-size: 125%;
+  font-family: "Montserrat";
+  color: #2c2929;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navLogin {
+  font-size: 0.5rem;
+  color: #808080;
+}
+
+.navHead {
+  font-size: 0.5rem;
+}
+
+.navLinks {
+  font-size: 0.7rem;
+}
+
+header h2 {
+  font-family: "Merriweather";
+  text-transform: none;
+  font-size: 3rem;
+  font-weight: 400;
+}
+header h1 {
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
 .navLogin {
   border-bottom: 1px solid #808080;
 }
@@ -347,15 +384,15 @@ a {
 }
 
 Header {
-  height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
 }
 Header .headerText {
   position: absolute;
-  top: 25%;
+  top: 40%;
   left: 10%;
+  right: 10%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,35 +425,126 @@ Header .headerButtons button {
   cursor: pointer;
 }
 
-html {
-  font-size: 125%;
-  font-family: "Montserrat";
-  color: #2c2929;
+.trendy-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+.trendy-buttons button:not(.trendy-sale) {
+  margin-right: 20px;
+}
+.trendy-buttons button {
+  padding: 20px 30px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  color: #FFFFFF;
+}
+.trendy-buttons .trendy-free-shipping {
+  background-color: #ca7379;
+}
+.trendy-buttons .trendy-giveaway {
+  background-color: #c1ac91;
+}
+.trendy-buttons .trendy-sale {
+  background-color: #8090a1;
 }
 
-.navLogin {
-  font-size: 0.5rem;
-  color: #808080;
+.trending-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 50px 0;
 }
 
-.navHead {
-  font-size: 0.5rem;
+.trending-categories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.trending-categories h5:not(last-of-type) {
+  margin-right: 20px;
 }
 
-.navLinks {
-  font-size: 0.7rem;
+.trending-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 100px;
 }
 
-header h2 {
-  font-family: "Merriweather";
-  text-transform: none;
-  font-size: 3rem;
-  font-weight: 400;
+.trending-item {
+  width: calc(25% - 80px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-header h1 {
-  font-size: 0.7rem;
-  font-weight: 400;
-  letter-spacing: 4px;
+.trending-item button {
+  border-radius: 30px;
+  padding: 10px 30px;
+}
+
+.trending-item:not(last-of-type) {
+  margin-right: 20px;
+}
+
+.trending-item-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.trending-bottom-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 100px;
+}
+
+.trending-zorka-fashion-store {
+  margin-right: 40px;
+  padding: 60px;
+  background-image: url("/assets/blog-img-6.jpg");
+  width: calc(50% - 20px);
+  text-align: center;
+  color: white;
+}
+
+.trending-50-off {
+  background-image: url("/assets/home-bg-2.jpg");
+  background-size: cover;
+  width: calc(50% - 40px);
+  padding: 60px;
+  text-align: center;
+  color: white;
 }

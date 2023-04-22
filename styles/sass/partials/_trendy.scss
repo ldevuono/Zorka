@@ -1,0 +1,97 @@
+@use "./variables";
+
+.trendy-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    button:not(.trendy-sale) {
+        margin-right: 20px;
+    }
+
+    button {
+        padding: 20px 30px;
+        text-transform: uppercase;
+        color: variables.$white;
+    }
+
+    .trendy-free-shipping {
+        background-color: variables.$pink;
+    }
+
+    .trendy-giveaway {
+        background-color: variables.$camel;
+    }
+
+    .trendy-sale {
+        background-color: variables.$blue;
+    }
+}
+
+.trending-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.trending-categories {
+    display: flex;
+
+    h5:not(last-of-type) {
+        margin-right: 20px;
+    }
+}
+
+.trending-items {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.trending-item {
+    width: calc((100% / 4) - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    button {
+        border-radius: 30px;
+        padding: 10px 30px;
+    }
+}
+
+.trending-item:not(last-of-type) {
+    margin-right: 20px;
+}
+
+.trending-item-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.trending-bottom-boxes {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.trending-zorka-fashion-store {
+    margin-right: 40px;
+    padding: 60px;
+    background-image: url("/assets/blog-img-6.jpg");
+    width: calc((100% / 2) - 20px);
+    text-align: center;
+    color: white;
+}
+
+.trending-50-off {
+    background-image: url("/assets/home-bg-2.jpg");
+    background-size: cover;
+    width: calc((100% / 2) - 40px);
+    padding: 60px;
+    text-align: center;
+    color: white;
+}
